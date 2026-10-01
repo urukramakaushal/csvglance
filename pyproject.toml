@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csvglance"
+version = "0.1.0"
+description = "Quick health report for any CSV: missing values, duplicates, outliers."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["pandas"]
+license = { text = "MIT" }
+
+[project.scripts]
+csvglance = "csvglance.cli:main"
